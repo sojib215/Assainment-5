@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency-Hotline</title>
+    <!-- link Tailwind and daisyui -->
+    <script src="https://cdn.tailwindcss.com"></script>     
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="p-6 flex justify-between bg-white shadow-md">
+        <div class="flex items-center w-full max-w-[300px]">
+            <img class="w-12 h-12" src="assets/logo.png" alt="">
+            <p class="text-[#006747] w-32 font-bold ml-3 "> Emergency Service</p>
+        </div>
+        <div class="flex gap-2 md:gap-10 items-center">
+            <div class="flex items-center bg-green-100 w-20 md:w-28 justify-center p-3 rounded-full gap-1">
+                <span id="heart" class="font-bold">0</span>
+                <img class="w-7 h-7 " src="assets/heart.png" alt="">
+            </div>
+            <div class="flex items-center bg-green-100 w-20 md:w-28 justify-center p-3 rounded-full gap-1">
+                <span id="coin" class="font-bold">100</span>
+                <img class="w-6 h-6 " src="assets/coin.png" alt="">
+            </div>
+            <div class="flex items-center bg-green-600 w-20 md:w-28 justify-center text-white p-3 rounded-full gap-1" >
+                <span id="copy-count" class="font-bold">0</span>
+                <p  class="font-bold">copy</p>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section  -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
