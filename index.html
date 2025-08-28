@@ -7,6 +7,9 @@
     <!-- link Tailwind and daisyui -->
     <script src="https://cdn.tailwindcss.com"></script>     
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Link font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <!-- Nav Bar -->
@@ -25,7 +28,7 @@
                 <img class="w-6 h-6 " src="assets/coin.png" alt="">
             </div>
             <div class="flex items-center bg-green-600 w-20 md:w-28 justify-center text-white p-3 rounded-full gap-1" >
-                <span id="copy-count" class="font-bold">0</span>
+                <span id="copy" class="font-bold">0</span>
                 <p  class="font-bold">copy</p>
             </div>
         </div>
@@ -48,7 +51,8 @@
                         </div>
                      </div>
                       <div id="cardList" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
-                      <!-- ekhane card banabo pore  -->
+                      <!-- card  -->
+                       
                  </div>
             </div>
             <aside class="lg:col-span-1">
@@ -58,7 +62,13 @@
                              <i class="fa-regular fa-clock"></i>
                              <h3 class="text-xl font-semibold">Call  History</h3>
                         </div>
+                        <button id="clearHistoryBtn" class="inline-flex items-center gap-2 text-sm font-medium border rounded-lg px-3 py-2 hover:bg-gray-50 active:scale-[0.98]">
+                            Clear History
+                        </button>
                      </div>
+                     <ul id="historyList" class="space-y-3">
+                        <!-- Js er history asbe  -->
+                     </ul>
                 </div>
             </aside>
         </div>
