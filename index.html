@@ -31,13 +31,38 @@
         </div>
     </nav>
     <!-- Hero Section  -->
-     <section class="h-60 bg-green-800 flex flex-col justify-between items-center p-6">
-        <img class="w-24 h-24 mt-4" src="assets/logo-dark.png" alt="">
+     <section class="h-80 md:h-60 bg-green-800 flex flex-col justify-between items-center p-6">
+        <img class="w-24 h-24 mt-2 md:mt-4" src="assets/logo-dark.png" alt="">
         <h1 class="text-white text-4xl font-bold text-center">Emergency Service Directory</h1>
         <p class="text-white/80 text-lg text-center mb-4">Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh</p>
      </section>
      <!-- Main section  -->
-      
+     <main id="main" class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
+                 <div class="lg:col-span-2 space-y-6">
+                     <div class="flex items-end justify-between">
+                        <div>
+                         <h2 class="text-2xl md:text-3xl font-bold">Emergency Services</h2>
+                         <p class="text-sm text-gray-600">Find important hotlines below</p>
+                        </div>
+                     </div>
+                      <div id="cardList" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+                      <!-- ekhane card banabo pore  -->
+                 </div>
+            </div>
+            <aside class="lg:col-span-1">
+                <div class="border rounded-2xl p-5 md:p-6 bg-white shadow-sm">
+                     <div class="flex items-center justify-between mb-4 ">
+                        <div class="flex items-center gap-2">
+                             <i class="fa-regular fa-clock"></i>
+                             <h3 class="text-xl font-semibold">Call  History</h3>
+                        </div>
+                     </div>
+                </div>
+            </aside>
+        </div>
+     </main>
 
 
     <script src="script.js"></script>
