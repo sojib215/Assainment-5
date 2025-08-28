@@ -15,12 +15,20 @@ const clearHistoryBtn = document.getElementById('clearHistoryBtn');
 
 hearts.forEach(heart => {
     heart.addEventListener('click', () => {
-        heartCount++;
+        const icon = heart.querySelector('i');
+        
+        if (icon.classList.contains('text-red-500')) {
+            heartCount--;
+            icon.classList.remove('text-red-500');
+        } else {
+            heartCount++;
+            icon.classList.add('text-red-500');
+        }
+
         heartDisplay.textContent = heartCount;
-        // Nijer chestay kichu 
-        heart.querySelector('i').classList.toggle('text-red-500');
     });
 });
+
 
 callButtons.forEach(button => {
     button.addEventListener('click', () => {
